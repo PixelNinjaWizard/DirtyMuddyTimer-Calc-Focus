@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+    <div id="app">
+        <h2>Add New Task</h2>
+        <input type="text" id="taskInput" placeholder="Enter task" />
+        <select id="prioritySelect">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <button id="addTaskBtn">Add Task</button>
+        
+        <h3>Tasks</h3>
+        <ul id="taskList"></ul> <!-- Tasks will be dynamically added here -- update for v2-->
+        
+        <h3>Timer Control</h3>
+        <button id="startTimerBtn">Start Timer for Selected Tasks</button>
+        <button id="pauseTimerBtn" style="display:none;">Pause Timer</button>
+        <button id="resumeTimerBtn" style="display:none;">Resume Timer</button>
+        <div id="timerDisplay">No active timer</div> <!-- Display for the timer countdown -->
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

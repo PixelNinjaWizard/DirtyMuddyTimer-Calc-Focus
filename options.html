@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Options - Task Manager Extension</title>
+    <link rel="stylesheet" href="styles/options.css">
+</head>
+<body>
+    <div id="optionsContainer">
+        <h1>Extension Settings</h1>
+        <form id="settingsForm">
+            <!-- Default Timer Duration Setting -->
+            <label for="defaultTimerDuration">Default Timer Duration (minutes):</label>
+            <input type="number" id="defaultTimerDuration" name="defaultTimerDuration" min="1" max="120" step="1">
+            <button type="submit">Save Settings</button>
+        </form>
+        <div id="status"></div> <!-- Placeholder for showing the status message -->
+        <!-- Potential future settings could be added here - may add more pazzaz -->
+        <!-- Note for future development: Notification Preferences, Task Prioritization Rules, etc. -->
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>
